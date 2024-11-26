@@ -1,0 +1,29 @@
+from machine import Pin
+from time import sleep
+
+B1 = Pin(15, Pin.IN)
+L1 = Pin(19, Pin.OUT)
+
+print(B1.value())
+
+while True:
+        if B1.value()==0:
+            L1.on()
+            sleep(0.5)
+      
+            L1.off()
+            sleep(0.5)
+
+            L1.on()
+            sleep(0.5)
+        
+            L1.off()
+            sleep(0.5)
+
+            L1.on()
+            sleep(0.5)
+        
+            L1.off()
+            sleep(0.5)
+
+            
